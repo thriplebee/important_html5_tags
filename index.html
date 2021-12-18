@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Important Rarely Used HTML5 Tags</title>
+</head>
+
+<body>
+    <!-- Details & summary Tag -->
+    <details>
+        <summary>Information</summary>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam tenetur et impedit deserunt magnam ut! Quis a
+            sint reiciendis iusto quisquam exercitationem soluta perspiciatis consectetur voluptas vel iure autem
+            impedit maxime cupiditate rerum ducimus, quae facere esse dignissimos quas ab dolorum. Magnam quo provident
+            consectetur vitae debitis quibusdam a recusandae esse temporibus sed atque beatae eaque nisi facere
+            aspernatur, veniam corrupti officiis mollitia vero! Eveniet ea voluptas unde labore vel inventore aperiam
+            tempore quidem fuga dolor, alias natus quas nam quo? Aliquam odit provident mollitia voluptate impedit.
+            Perferendis esse quibusdam explicabo facilis sunt velit, aliquam aliquid, itaque facere nobis nulla.
+        </p>
+    </details>
+    <!-- ------------------------------------------------------------------- -->
+    <br>
+    <hr>
+    <br>
+
+    <!-- Rarely Used Input Tags -->
+    <!-- Color -->
+    <input type="color">
+    <!-- ----------------------------------------- -->
+    <br>
+
+    <!-- Range -->
+    <input type="range" max="100" min="0" value="40">
+    <!-- ----------------------------------------- -->
+    <br>
+
+    <!-- Date -->
+    <input type="date">
+    <!-- ----------------------------------------- -->
+    <br>
+
+    <!-- Date & Time -->
+    <input type="datetime-local">
+    <!-- ----------------------------------------- -->
+    <br>
+
+    <!-- Time -->
+    <input type="time">
+    <!-- ----------------------------------------- -->
+    <br>
+
+    <!-- Week -->
+    <input type="week">
+    <!-- ----------------------------------------- -->
+    <br>
+
+    <!-- Month -->
+    <input type="month">
+    <!-- ----------------------------------------- -->
+    <br>
+
+    <!-- URL -->
+    <input type="url">
+    <!-- ----------------------------------------- -->
+    <br>
+
+    <!-- Search -->
+    <input type="search">
+    <!-- ----------------------------------------- -->
+    <br>
+
+    <!-- Tel -->
+    <input type="tel">
+    <!-- ------------------------------------------------------------------- -->
+    <br>
+    <hr>
+    <br>
+
+    <!-- Meter Tag -->
+    <meter max="100" min="0" value="40"></meter>
+    <!-- ------------------------------------------------------------------- -->
+    <br>
+    <hr>
+    <br>
+
+    <!-- Progress Tag -->
+    <progress max="100" min="0" value="40"></progress>
+    <!-- ------------------------------------------------------------------- -->
+    <br>
+    <hr>
+    <br>
+
+    <!-- Datalist Tag -->
+    <input type="text" list="countries" placeholder="Search...">
+    <datalist id="countries">
+        <option value="Ceylon">SriLanka</option>
+        <option>India</option>
+        <option>Pakisthan</option>
+        <option>Bangaladesh</option>
+        <option>Bhutan</option>
+        <option>China</option>
+        <option>Thaiwan</option>
+        <option>England</option>
+        <option>Russia</option>
+        <option>USA</option>
+    </datalist>
+    <!-- ------------------------------------------------------------------- -->
+    <br>
+    <hr>
+    <br>
+
+    <!-- Optgroup Tag -->
+    <select>
+        <optgroup label="Asia">
+            <option>SriLanka</option>
+            <option>India</option>
+            <option>Pakisthan</option>
+            <option>Bangaladesh</option>
+            <option>Bhutan</option>
+            <option>China</option>
+            <option>Thaiwan</option>
+        </optgroup>
+        <option>England</option>
+        <option>Russia</option>
+        <option>USA</option>
+    </select>
+    <!-- ------------------------------------------------------------------- -->
+    <br>
+    <hr>
+    <br>
+
+    <!-- Fieldset & legend Tags -->
+    <fieldset>
+        <legend>Personal Info</legend>
+        <input type="text" placeholder="Name...">
+        <input type="number" placeholder="Age...">
+    </fieldset>
+    <!-- ------------------------------------------------------------------- -->
+    <br>
+    <hr>
+    <br>
+
+    <!-- Picture Tag -->
+    <picture>
+        <source srcset="./imgs/image3.webp" type="image/webp">
+        <source srcset="./imgs/image2.jpeg" media="(min-width: 800px)">
+        <img src="./imgs/image1.jpeg" style="width: 600px;">
+    </picture>
+    <!-- ------------------------------------------------------------------- -->
+    <br>
+    <hr>
+    <br>
+
+    <!-- Template Tag -->
+    <template>
+        <div>
+            Sample Template
+            <h3>Hello</h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia, natus?</p>
+        </div>
+    </template>
+
+    <!-- Script -->
+    <script>
+        const template = document.querySelector('template')
+        const clone1 = template.content.cloneNode(true)
+        clone1.querySelector('h3').textContent = "How are you?"
+        clone1.querySelector('p').textContent = "Lorem Sample1"
+        document.body.append(clone1)
+
+        const clone2 = template.content.cloneNode(true)
+        clone2.querySelector('h3').textContent = "What is your name?"
+        clone2.querySelector('p').textContent = "Lorem Sample2"
+        document.body.append(clone2)
+    </script>
+
+</body>
+
+</html>
